@@ -23,13 +23,7 @@ export const defaultPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(
-      Component.Explorer({
-        title: "📁 Структура", // Переводим "Explorer" в "Структура"
-        folderClickBehavior: "link", // Исправляем поведение ссылок
-        collapseClick: "collapse",
-      })
-    ),
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
     Component.Graph(),
